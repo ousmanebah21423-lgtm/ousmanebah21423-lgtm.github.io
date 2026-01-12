@@ -1,41 +1,66 @@
 /* Global Styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f2f5;
+    background: linear-gradient(135deg, #e0f7fa, #f3e5f5);
     color: #333;
     line-height: 1.6;
     margin: 0;
     padding: 0;
 }
 
-/* Container for content */
+/* Container for all sections */
 body > * {
     max-width: 900px;
-    margin: 20px auto;
+    margin: 30px auto;
     padding: 20px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 3D Hover Effect */
+body > *:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
 }
 
 /* Header */
-h1 {
-    font-size: 2.5rem;
-    color: #1e3a8a; /* Deep blue */
+header h1 {
+    font-size: 2.8rem;
+    color: #1e3a8a;
     margin-bottom: 5px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 }
 
-p {
-    font-size: 1rem;
+header p {
+    font-size: 1.1rem;
+    color: #555;
 }
 
 /* Section Titles */
 h2 {
-    font-size: 1.8rem;
-    color: #2563eb; /* Medium blue */
-    border-bottom: 3px solid #60a5fa; /* lighter blue line */
+    font-size: 2rem;
+    color: #2563eb;
+    border-bottom: 3px solid #60a5fa;
     padding-bottom: 5px;
     margin-top: 30px;
+    text-shadow: 0.5px 0.5px rgba(0,0,0,0.1);
+}
+
+/* Project Cards */
+.project-card {
+    background: linear-gradient(145deg, #fff9c4, #ffecb3);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
 }
 
 /* Lists */
@@ -45,7 +70,7 @@ ul {
 }
 
 li {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 /* Links */
@@ -65,36 +90,24 @@ footer {
     text-align: center;
     font-size: 0.9rem;
     color: #555;
+    margin-top: 40px;
 }
 
-/* Professional Summary Highlight */
-h2 + p {
-    background: #e0f2fe;
-    padding: 15px;
-    border-left: 5px solid #3b82f6;
-    border-radius: 5px;
-}
-
-/* Projects Section */
-h2 + ul {
-    padding: 15px;
-    background: #fef3c7; /* light yellow */
-    border-radius: 8px;
-}
-
-/* Hover effect for project list items */
-ul li:hover {
-    background: #fde68a;
-    transition: all 0.3s ease;
-    padding-left: 10px;
+/* Professional Summary */
+#professional-summary p {
+    background: linear-gradient(120deg, #e0f2fe, #bae6fd);
+    padding: 20px;
+    border-left: 6px solid #3b82f6;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 }
 
 /* Contact Section */
-h2:contains('Contact') + p {
+#contact p a {
     font-weight: bold;
 }
 
 /* Smooth transitions */
-body, h1, h2, p, li {
+body, h1, h2, p, li, .project-card {
     transition: all 0.3s ease;
 }
