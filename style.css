@@ -1,0 +1,100 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for content */
+body > * {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* Header */
+h1 {
+    font-size: 2.5rem;
+    color: #1e3a8a; /* Deep blue */
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 1rem;
+}
+
+/* Section Titles */
+h2 {
+    font-size: 1.8rem;
+    color: #2563eb; /* Medium blue */
+    border-bottom: 3px solid #60a5fa; /* lighter blue line */
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+/* Lists */
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Links */
+a {
+    color: #1d4ed8;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #2563eb;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Professional Summary Highlight */
+h2 + p {
+    background: #e0f2fe;
+    padding: 15px;
+    border-left: 5px solid #3b82f6;
+    border-radius: 5px;
+}
+
+/* Projects Section */
+h2 + ul {
+    padding: 15px;
+    background: #fef3c7; /* light yellow */
+    border-radius: 8px;
+}
+
+/* Hover effect for project list items */
+ul li:hover {
+    background: #fde68a;
+    transition: all 0.3s ease;
+    padding-left: 10px;
+}
+
+/* Contact Section */
+h2:contains('Contact') + p {
+    font-weight: bold;
+}
+
+/* Smooth transitions */
+body, h1, h2, p, li {
+    transition: all 0.3s ease;
+}
