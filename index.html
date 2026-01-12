@@ -7,6 +7,7 @@
 </head>
 <body>
 
+  <!-- Header -->
   <header>
     <h1>Ousmane Bah</h1>
     <p>IT Support | Cloud Fundamentals | AWS</p>
@@ -14,6 +15,7 @@
 
   <hr>
 
+  <!-- Professional Summary -->
   <section id="professional-summary">
     <h2>Professional Summary</h2>
     <p>
@@ -21,42 +23,81 @@
     </p>
   </section>
 
+  <!-- Technical Skills -->
   <section id="technical-skills">
     <h2>Technical Skills</h2>
     <ul>
       <li><strong>Operating Systems:</strong> Windows, Linux</li>
       <li><strong>Software:</strong> Microsoft Office (Word, Excel, PowerPoint, Outlook, Calendar), Google Suite</li>
-      <li><strong>Cloud Computing:</strong> Cloud concepts, AWS Services, AWS CLI installation and configuration, AWS Systems Manager, Static Website Hosting on S3 and EC2, Scaling & Load Balancing, VPC configuration, AWS CloudFormation, AWS CloudWatch</li>
-      <li><strong>Networking & Security:</strong> Basic networking protocols and concepts, Network analysis tools (tcpdump, Wireshark), AWS VPC, EC2 instances, Security Groups, NACL, Subnets, Internet Gateways</li>
-      <li><strong>Linux:</strong> Fundamental Linux knowledge, shell scripting, accessing Linux instances from Windows, file and user management, file permissions, working with commands, process management</li>
-      <li><strong>Systems & Administration:</strong> Windows Active Directory, Vidéotron SGA (access & identity management), Vidéotron RemedyWeb (ITSM/ticketing), network hardening, firewall configuration</li>
-      <li><strong>Programming & Scripting:</strong> Python fundamentals, basic SQL queries, bash scripting</li>
-      <li><strong>Cybersecurity:</strong> Threat detection & mitigation, risk assessment & management, defense strategies, security operations & monitoring, incident response, hands-on experience with Google Chronicle for data integration</li>
+      <li><strong>Cloud Computing:</strong> Cloud concepts, AWS Services, AWS CLI, AWS Systems Manager, Hosting on S3 & EC2, Scaling & Load Balancing, VPC, CloudFormation, CloudWatch</li>
+      <li><strong>Networking & Security:</strong> TCP/IP fundamentals, tcpdump, Wireshark, Security Groups, NACL, Subnets, Internet Gateways</li>
+      <li><strong>Linux:</strong> Shell scripting, file/user management, process control, permissions, remote access via PuTTY</li>
+      <li><strong>Systems & Administration:</strong> Windows Active Directory, Vidéotron SGA & RemedyWeb (ITSM/ticketing), network hardening, firewall configuration</li>
+      <li><strong>Programming & Scripting:</strong> Python fundamentals, SQL queries, Bash scripting</li>
+      <li><strong>Cybersecurity:</strong> Threat detection & mitigation, risk assessment, defense strategies, security operations & monitoring, incident response, Google Chronicle labs</li>
     </ul>
   </section>
 
+  <!-- Projects -->
   <section id="projects">
     <h2>Projects</h2>
+
+    <!-- Portfolio Website -->
     <div class="project-card">
       <h3>Portfolio Website</h3>
       <ul>
-        <li>Built using HTML, CSS</li>
+        <li>Built using HTML and CSS</li>
         <li>Version controlled with GitHub</li>
         <li>Hosted for free using GitHub Pages</li>
       </ul>
+      <p><a href="https://ousmanebah21423-lgtm.github.io" target="_blank">View Live Portfolio</a></p>
     </div>
 
+    <!-- AWS Production-Ready Web App -->
     <div class="project-card">
-      <h3>Previous GitHub Repositories</h3>
+      <h3>Production-Ready Web Application on AWS</h3>
+      <p>
+        Deployed a highly available, production-ready web application using modern cloud best practices. Runs on <strong>NGINX</strong> servers hosted on <strong>EC2 instances</strong> managed by an <strong>Auto Scaling Group</strong>, fronted by an <strong>Application Load Balancer</strong> across multiple Availability Zones.
+      </p>
       <ul>
-        <li><a href="https://github.com/ousmanebah21423-lgtm/aws-website" target="_blank">AWS Website Project</a></li>
-        <li><a href="https://github.com/ousmanebah21423-lgtm/linux-labs" target="_blank">Linux Labs</a></li>
-        <li><a href="https://github.com/ousmanebah21423-lgtm/cloud-scripts" target="_blank">Cloud Scripts</a></li>
-        <!-- Add more repos here -->
+        <li><strong>Architecture:</strong> Multi-AZ, Auto Scaling, Load Balanced, secure networking with Security Groups</li>
+        <li><strong>AWS Services:</strong> EC2, ALB, ASG, Target Groups, Launch Templates, VPC, Security Groups</li>
+        <li><strong>Instance Configuration:</strong> Automated via user data; NGINX installed and running on launch</li>
+        <li><strong>High Availability & Scaling:</strong> Automatic replacement of unhealthy instances, no downtime</li>
+        <li><strong>Security:</strong> ALB handles HTTP, EC2 allows traffic only from ALB, SSH access restricted</li>
       </ul>
+      <p><a href="https://github.com/ousmanebah21423-lgtm/aws-website" target="_blank">View on GitHub</a></p>
     </div>
+
+    <!-- Linux Labs Project Example -->
+    <div class="project-card">
+      <h3>Linux Labs</h3>
+      <p>
+        Hands-on exercises for Linux fundamentals including file management, user/group administration, permissions, shell scripting, and network troubleshooting.
+      </p>
+      <ul>
+        <li><strong>Skills:</strong> Linux commands, shell scripting, system administration</li>
+        <li><strong>Tools:</strong> PuTTY, SSH, Bash</li>
+      </ul>
+      <p><a href="https://github.com/ousmanebah21423-lgtm/linux-labs" target="_blank">View on GitHub</a></p>
+    </div>
+
+    <!-- Cloud Scripts Example -->
+    <div class="project-card">
+      <h3>Cloud Scripts</h3>
+      <p>
+        Collection of automation scripts for AWS services including CLI commands, Terraform templates, and CloudFormation scripts to manage infrastructure efficiently.
+      </p>
+      <ul>
+        <li><strong>Skills:</strong> Infrastructure as Code, AWS CLI, Terraform, CloudFormation</li>
+        <li><strong>Focus:</strong> Automating deployments and cloud management</li>
+      </ul>
+      <p><a href="https://github.com/ousmanebah21423-lgtm/cloud-scripts" target="_blank">View on GitHub</a></p>
+    </div>
+
   </section>
 
+  <!-- Contact -->
   <section id="contact">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:ousmanebah21423@gmail.com">ousmanebah21423@gmail.com</a></p>
