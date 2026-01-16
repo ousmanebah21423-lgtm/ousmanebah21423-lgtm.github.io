@@ -9,9 +9,32 @@ body {
     position: relative;
 }
 
-/* === FUTURISTIC DIGITAL NETWORK BACKGROUND === */
+/* === ANIMATED STAR FIELD === */
 body::before {
     content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background: url('https://raw.githubusercontent.com/ousmanebah21423-lgtm/particles/main/stars.png') repeat;
+    animation: moveStars 200s linear infinite;
+    z-index: -3;
+    opacity: 0.5;
+}
+
+@keyframes moveStars {
+    from { transform: translate(0,0); }
+    to { transform: translate(-100px, -100px); }
+}
+
+/* === FUTURISTIC DIGITAL NETWORK BACKGROUND === */
+body::before {
+    /* Keep stars and network separate by adding a new pseudo-element via JS or stacking divs */
+}
+
+/* Overlay network via another element (or combine if using only CSS, adjust z-index) */
+.network-overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -48,4 +71,121 @@ body::after {
 @keyframes floatBinary {
     from { transform: translate(0,0); }
     to { transform: translate(-100px, -100px); }
+}
+
+/* === FLOATING CLOUD ICONS === */
+.cloud {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    background: url('https://cdn-icons-png.flaticon.com/512/414/414825.png') no-repeat center/contain;
+    opacity: 0.1;
+    animation: floatClouds linear infinite;
+    z-index: -1;
+}
+
+@keyframes floatClouds {
+    0% { transform: translateY(100vh) rotate(0deg); }
+    50% { transform: translateY(-20vh) rotate(180deg); }
+    100% { transform: translateY(100vh) rotate(360deg); }
+}
+
+/* === MAIN SECTION CONTAINERS === */
+body > * {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px;
+    background: rgba(10, 20, 50, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,255,255,0.2);
+    backdrop-filter: blur(8px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 3D Hover Effect */
+body > *:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 20px 60px rgba(0,255,255,0.4);
+}
+
+/* === HEADER === */
+header h1 {
+    font-size: 3rem;
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00bfff;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #aad4ff;
+}
+
+/* === SECTION TITLES === */
+h2 {
+    font-size: 2rem;
+    color: #00e5ff;
+    border-bottom: 2px solid #00ffff;
+    padding-bottom: 5px;
+    margin-top: 30px;
+    text-shadow: 0 0 5px #00ffff;
+}
+
+/* === PROJECT CARDS === */
+.project-card {
+    background: rgba(0, 30, 60, 0.6);
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,255,255,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 25px 70px rgba(0,255,255,0.5);
+}
+
+/* === PROFESSIONAL SUMMARY === */
+#professional-summary p {
+    background: rgba(0, 50, 100, 0.5);
+    padding: 20px;
+    border-left: 6px solid #00ffff;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0,255,255,0.3);
+}
+
+/* === LINKS === */
+a {
+    color: #00ffff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #00e5ff;
+    text-decoration: underline;
+}
+
+/* === LISTS === */
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* === FOOTER === */
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #aad4ff;
+    margin-top: 40px;
+}
+
+/* === TRANSITIONS === */
+body, h1, h2, p, li, .project-card {
+    transition: all 0.3s ease;
 }
